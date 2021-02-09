@@ -30,7 +30,8 @@ twitter_username: jekyllrb
 github_username:  harveyvn
 
 # Build settings
-theme: jekyll-theme-chirpy
+theme: null
+remote_theme: cotes2020/jekyll-theme-chirpy
 plugins:
   - jekyll-feed
 
