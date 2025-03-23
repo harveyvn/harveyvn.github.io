@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Principles | Der Ingenieurwinkel</title>
+<meta name="title" content="Principles" />
+<meta name="description" content="Engineering Principles
+
+
+Never use the word &ldquo;everything.&rdquo;
+→ Be specific. Don’t say &ldquo;everything&rdquo; when you can be more precise.
+
+
+Handle the mess.
+→ Don&rsquo;t ignore messy problems—solve them.
+
+
+Let different things be different.
+→ Don’t force unrelated things to be the same.
+
+
+Always use UUIDs.
+→ Use unique IDs for each item.
+
+
+Look at things.
+→ Always check the actual data or system instead of guessing.
+
+
+Never name something &ldquo;end.&rdquo;
+→ Be precise: use &ldquo;endExclusive&rdquo; or &ldquo;endInclusive&rdquo; to show if the end is included or not." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="http://localhost:1313/principles/">
+  <meta property="og:site_name" content="Der Ingenieurwinkel">
+  <meta property="og:title" content="Principles">
+  <meta property="og:description" content="Engineering Principles Never use the word “everything.”
+→ Be specific. Don’t say “everything” when you can be more precise.
+Handle the mess.
+→ Don’t ignore messy problems—solve them.
+Let different things be different.
+→ Don’t force unrelated things to be the same.
+Always use UUIDs.
+→ Use unique IDs for each item.
+Look at things.
+→ Always check the actual data or system instead of guessing.
+Never name something “end.”
+→ Be precise: use “endExclusive” or “endInclusive” to show if the end is included or not.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Principles">
+  <meta name="twitter:description" content="Engineering Principles Never use the word “everything.”
+→ Be specific. Don’t say “everything” when you can be more precise.
+Handle the mess.
+→ Don’t ignore messy problems—solve them.
+Let different things be different.
+→ Don’t force unrelated things to be the same.
+Always use UUIDs.
+→ Use unique IDs for each item.
+Look at things.
+→ Always check the actual data or system instead of guessing.
+Never name something “end.”
+→ Be precise: use “endExclusive” or “endInclusive” to show if the end is included or not.">
+
+
+
+
+  <meta itemprop="name" content="Principles">
+  <meta itemprop="description" content="Engineering Principles Never use the word “everything.”
+→ Be specific. Don’t say “everything” when you can be more precise.
+Handle the mess.
+→ Don’t ignore messy problems—solve them.
+Let different things be different.
+→ Don’t force unrelated things to be the same.
+Always use UUIDs.
+→ Use unique IDs for each item.
+Look at things.
+→ Always check the actual data or system instead of guessing.
+Never name something “end.”
+→ Be precise: use “endExclusive” or “endInclusive” to show if the end is included or not.">
+  <meta itemprop="wordCount" content="174">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+      --width: 720px;
+      --font-main: Verdana, sans-serif;
+      --font-secondary: Verdana, sans-serif;
+      --font-scale: 1em;
+      --background-color: #fff;
+      --heading-color: #222;
+      --text-color: #444;
+      --link-color: #3273dc;
+      --visited-color:  #8b6fcb;
+      --code-background-color: #f2f2f2;
+      --code-color: #222;
+      --blockquote-color: #222;
+  }
+
+  @media (prefers-color-scheme: dark) {
+      :root {
+          --background-color: #01242e;
+          --heading-color: #eee;
+          --text-color: #ddd;
+          --link-color: #8cc2dd;
+          --visited-color:  #8b6fcb;
+          --code-background-color: #000;
+          --code-color: #ddd;
+          --blockquote-color: #ccc;
+      }
+  }
+
+  body {
+      font-family: var(--font-secondary);
+      font-size: var(--font-scale);
+      margin: auto;
+      padding: 20px;
+      max-width: var(--width);
+      text-align: left;
+      background-color: var(--background-color);
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      line-height: 1.5;
+      color: var(--text-color);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-main);
+      color: var(--heading-color);
+  }
+
+  a {
+      color: var(--link-color);
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: underline;
+  }
+
+  nav a {
+      margin-right: 8px;
+  }
+
+  strong, b {
+      color: var(--heading-color);
+  }
+
+  button {
+      margin: 0;
+      cursor: pointer;
+  }
+
+  time {
+   	font-family: monospace;
+    	font-style: normal;
+    	font-size: 15px;
+  }
+
+  main {
+      line-height: 1.6;
+  }
+
+  table {
+      width: 100%;
+  }
+
+  hr {
+      border: 0;
+      border-top: 1px dashed;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  code {
+      font-family: monospace;
+      padding: 2px;
+      background-color: var(--code-background-color);
+      color: var(--code-color);
+      border-radius: 3px;
+  }
+
+  blockquote {
+      border-left: 1px solid #999;
+      color: var(--code-color);
+      padding-left: 20px;
+      font-style: italic;
+  }
+
+  footer {
+      padding: 25px 0;
+      text-align: center;
+  }
+
+  .title:hover {
+      text-decoration: none;
+  }
+
+  .title h1 {
+      font-size: 1.5em;
+  }
+
+  .inline {
+      width: auto !important;
+  }
+
+  .highlight, .code {
+      padding: 1px 15px;
+      background-color: var(--code-background-color);
+      color: var(--code-color);
+      border-radius: 3px;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      overflow-x: auto;
+  }
+
+   
+  ul.blog-posts {
+      list-style-type: none;
+      padding: unset;
+  }
+
+  ul.blog-posts li {
+      display: flex;
+  }
+
+  ul.blog-posts li span {
+      flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+      color: var(--visited-color);
+  }
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Der Ingenieurwinkel</h2>
+</a>
+<nav><a href="/">Home</a>
+
+<a href="/books/">Books</a>
+
+<a href="/principles/">Principles</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<content>
+  <h3 id="engineering-principles"><strong>Engineering Principles</strong></h3>
+<ol>
+<li>
+<p><strong>Never use the word &ldquo;everything.&rdquo;</strong><br>
+→ Be specific. Don’t say &ldquo;everything&rdquo; when you can be more precise.</p>
+</li>
+<li>
+<p><strong>Handle the mess.</strong><br>
+→ Don&rsquo;t ignore messy problems—solve them.</p>
+</li>
+<li>
+<p><strong>Let different things be different.</strong><br>
+→ Don’t force unrelated things to be the same.</p>
+</li>
+<li>
+<p><strong>Always use UUIDs.</strong><br>
+→ Use unique IDs for each item.</p>
+</li>
+<li>
+<p><strong>Look at things.</strong><br>
+→ Always check the actual data or system instead of guessing.</p>
+</li>
+<li>
+<p><strong>Never name something &ldquo;end.&rdquo;</strong><br>
+→ Be precise: use &ldquo;endExclusive&rdquo; or &ldquo;endInclusive&rdquo; to show if the end is included or not.</p>
+</li>
+<li>
+<p><strong>Make dangerous code obvious.</strong><br>
+→ If a function is risky, name it <code>_DANGEROUS_DANGEROUS_DANGEROUS_BECAUSE_XYZ</code>.<br>
+→ If changing code can break things, add <code>// DANGEROUS DANGEROUS DANGEROUS IF YOU CHANGE THIS THEN XYZ WILL HAPPEN</code> on every line.</p>
+</li>
+<li>
+<p><strong>Use the best tools.</strong><br>
+→ Ask an experienced engineer what tool they recommend.<br>
+→ If they’re not available, ask AI—it’s not perfect but helpful.<br>
+→ If no good tool exists, build one.</p>
+</li>
+<li>
+<p><strong>Automate repetitive tasks.</strong><br>
+→ If you do the same thing more than 3 times, find a way to automate it.</p>
+</li>
+</ol>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

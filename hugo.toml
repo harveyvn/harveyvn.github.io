@@ -1,6 +1,6 @@
 baseURL = 'https://harveyvn.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Der Ingenieurwinkel'
 theme = 'hugo-bearblog'
 
 [caches]
